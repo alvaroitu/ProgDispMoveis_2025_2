@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Switch botaoSwitch;
     ToggleButton botaoToggle;
     RadioGroup radioGroupSexo;
-    RadioButton masculino, feminino, radioButtonSexo;
+    RadioButton radioButtonSexo;
     int radioButtonId;
 
     @Override
@@ -63,7 +63,8 @@ public class MainActivity extends AppCompatActivity {
                     sexo = sexoSelecionado + " selecionado.";
                     textoCheckBoxRadioButton.setText(cores + sexo);
                 } else {
-                    Toast.makeText(MainActivity.this, "Sexo deve ser selecionado.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,
+                            "Sexo deve ser selecionado.", Toast.LENGTH_SHORT).show();
                 }
             }
         });

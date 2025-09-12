@@ -26,7 +26,8 @@
     <RadioGroup
             android:layout_width="match_parent"
             android:orientation="horizontal"
-            android:layout_height="wrap_content" android:id="@+id/radioGroupSexo">
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroupSexo">
         <RadioButton
                 android:text="@string/masculino"
                 android:layout_width="wrap_content"
