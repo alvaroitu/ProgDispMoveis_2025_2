@@ -6,62 +6,56 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity" android:orientation="vertical">
+    <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button"/>
+    <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button2"/>
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <CheckBox
-                android:text="@string/vermelho"
+            android:layout_height="58dp">
+        <Button
+                android:text="Button"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/vermelho" android:layout_weight="1"/>
-        <CheckBox
-                android:text="@string/verde"
+                android:layout_height="wrap_content" android:id="@+id/button3" android:layout_weight="1"/>
+        <Button
+                android:text="Button"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/verde" android:layout_weight="1"/>
-        <CheckBox
-                android:text="@string/azul"
+                android:layout_height="wrap_content" android:id="@+id/button5" android:layout_weight="1"/>
+        <Button
+                android:text="Button"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/azul" android:layout_weight="1"/>
+                android:layout_height="wrap_content" android:id="@+id/button4" android:layout_weight="1"/>
     </LinearLayout>
-    <RadioGroup
+    <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="wrap_content" android:id="@+id/radioGroupSexo">
-        <RadioButton
-                android:text="@string/masculino"
+            android:layout_height="132dp">
+
+        <Button
+                android:text="Button"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/masculino" android:layout_weight="1"/>
-        <RadioButton
-                android:text="@string/feminino"
+                android:layout_height="wrap_content" android:id="@+id/button6"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="44dp"/>
+        <Button
+                android:text="Button"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/feminino" android:layout_weight="1"/>
-    </RadioGroup>
+                android:layout_height="wrap_content" android:id="@+id/button7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="20dp" android:layout_marginEnd="57dp"
+                app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <Button
-            android:text="@string/enviar"
+            android:text="Button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/botaoEnviar"/>
+            android:layout_height="wrap_content" android:id="@+id/button8"/>
     <Button
-            android:text="@string/limpar"
+            android:text="Button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/botaoLimpar"/>
-    <TextView
-            android:text="@string/textoCheckBoxRadioButton"
-            android:layout_width="match_parent"
-            android:layout_height="60dp" android:id="@+id/textoCheckBoxRadioButton" android:gravity="center"/>
-    <Switch
-            android:text="Switch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/botaoSwitch"/>
-    <TextView
-            android:text="@string/textoSwitch"
-            android:layout_width="match_parent"
-            android:layout_height="50dp" android:id="@+id/textoSwitch" android:gravity="center"/>
-    <ToggleButton
-            android:text="ToggleButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/botaoToggle"/>
-    <TextView
-            android:text="@string/textoToggle"
-            android:layout_width="match_parent"
-            android:layout_height="50dp" android:id="@+id/textoToggle" android:gravity="center"/>
+            android:layout_height="wrap_content" android:id="@+id/button9"/>
 </LinearLayout>
