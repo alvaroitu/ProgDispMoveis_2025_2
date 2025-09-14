@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Aula04_RadioButton</string>
+    <string name="vermelho">red</string>
+    <string name="verde">green</string>
+    <string name="azul">blue</string>
+    <string name="masculino">masculino</string>
+    <string name="feminino">feminino</string>
+    <string name="enviar">enviar</string>
+    <string name="limpar">limpar</string>
+    <string name="textoCheckBoxRadioButton">Texto CheckBox RadioButton</string>
+    <string name="textoSwitch">Texto Switch</string>
+    <string name="textoToggle">Texto Toggle</string>
+</resources>
