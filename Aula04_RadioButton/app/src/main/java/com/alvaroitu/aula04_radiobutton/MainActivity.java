@@ -35,34 +35,27 @@ public class MainActivity extends AppCompatActivity {
         botaoToggle = findViewById(R.id.botaoToggle);
         radioGroupSexo = findViewById(R.id.radioGroupSexo);
 
-
         botaoEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String cores = "";
                 String sexo = "";
-
                 if(vermelho.isChecked()){
                     String corSelecionada = vermelho.getText().toString();
                     cores = corSelecionada + " selecionada - ";
                 }
-
                 if(verde.isChecked()){
                     String corSelecionada = verde.getText().toString();
                     cores = cores + corSelecionada + " selecionado - ";
                 }
-
                 if(azul.isChecked()){
                     String corSelecionada = azul.getText().toString();
                     cores = cores + corSelecionada + " selecionado - ";
                 }
-
                 radioButtonId = radioGroupSexo.getCheckedRadioButtonId();
-
                 Log.d("VALOR", String.valueOf(radioButtonId));
                 Log.d("VALOR", String.valueOf(R.id.masculino));
                 Log.d("VALOR", String.valueOf(R.id.feminino));
-
                 if(radioButtonId != -1){
                     radioButtonSexo = findViewById(radioButtonId);
                     String sexoSelecionado = radioButtonSexo.getText().toString();
@@ -91,9 +84,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if(botaoSwitch.isChecked()){
                     textoSwitch.setText("PALMEIRAS NÃO TEM MUNDIAL!!!");
-//                    textoSwitch.setBackgroundColor(getColor(R.color.green));
-//                    textoSwitch.setBackgroundColor(Color.GREEN);
-                    textoSwitch.setBackgroundColor(Color.parseColor("#00FF00"));
+                    textoSwitch.setBackgroundColor(getColor(R.color.green));
                 }else{
                     textoSwitch.setText(getString(R.string.textoSwitch));
                     textoSwitch.setBackgroundColor(getColor(R.color.white));
